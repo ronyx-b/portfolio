@@ -38,13 +38,28 @@ footer {
   width: 450px;
 }
 
+.pic-slider-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: max-content;
+  border: 1px solid #333333;
+}
+
 img.screen-pic {
   display: block;
   width: 100%;
   max-width: 450px;
-  border: 1px solid #333333;
-  margin-left: auto;
-  margin-right: auto;
+  position: absolute;
+  top: 0px;
+  left: 100%;
+  z-index: -1;
+}
+
+img.screen-pic:nth-child(1) {
+  position: relative;
+  left: 0px;
+  z-index: 1;
 }
 
 #social-networks {
@@ -80,10 +95,10 @@ img.screen-pic {
 
 /* 575 */
 @media only screen and (max-width: 575px) {
-  img.screen-pic {
-    /* width: 100%;
-    max-width: 500px; */
-  }
+  /* img.screen-pic {
+    width: 100%;
+    max-width: 500px;
+  } */
   
   #social-networks a {
     margin-left: 7px;
