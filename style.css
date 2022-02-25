@@ -135,8 +135,12 @@ img.screen-pic:nth-child(1) {
     max-width: 500px;
   } */
 
-  #header-content {
+  /* #header-content {
     width: 325px;
+  } */
+
+  header {
+    height: 200px;
   }
   
   #header-content-text {
@@ -150,8 +154,12 @@ img.screen-pic:nth-child(1) {
 }
 
 @media only screen and (max-width: 350px) {
-  #header-content {
+  /* #header-content {
     width: 250px;
+  } */
+
+  header {
+    height: 150px;
   }
 
   #header-content-text {
