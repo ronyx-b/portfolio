@@ -1,0 +1,18 @@
+header {
+  color: #ffffff;
+  background-color: #002060;
+  /* background-image: url("%PUBLIC_URL%/img/mitchell-luo-FWoq_ldWlNQ-unsplash.jpg");  */
+  height: 300px; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+footer {
+  color: #333333;
+  background-color: #d0d0d0;
+}
+
+footer a {
+  color: inherit;
+}
