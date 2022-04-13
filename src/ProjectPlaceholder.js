@@ -34,8 +34,8 @@ export function ProjectPlaceholder() {
                   <Button className="btn btn-primary m-2 disabled placeholder col-3"></Button>
                 </div>
               </Col>
-              <Col className="col-4 placeholder-glow">
-                <div className="placeholder" style={{width: "100%", maxWidth: "450px", height: "50%", border: "1px solid #000000"}}></div>
+              <Col className="placeholder-glow">
+                <div className="placeholder" style={{width: "100%", height: "75%", border: "1px solid #000000"}}></div>
               </Col>
             </Row>
           </Container> 

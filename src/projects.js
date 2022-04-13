@@ -55,7 +55,7 @@ export const portfolio = [
     ],
     keywords: [ KW.JAVASCRIPT, KW.ANGULAR, KW.TYPESCRIPT, KW.RESTFUL, KW.MONGODB ],
     images_url: [ "spotify-api-1.png", "spotify-api-2.png" ],
-    website_url: "https://modest-minsky-73d338.netlify.app/",
+    website_url: "https://spotify-api-app.netlify.app/",
     repo_url: "https://github.com/ronyx-b/web422-spotify-app"
   },
   {
