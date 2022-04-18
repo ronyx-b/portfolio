@@ -1,9 +1,9 @@
-export const TYPE = {
+export const TYPE = Object.freeze({
   TECH: "TECHNICAL",
   MISC: "MISC",
-};
+});
 
-export const KW = {
+export const KW = Object.freeze({
   JAVASCRIPT: "JavaScript",
   HTML5: "HTML5",
   CSS3: "CSS3",
@@ -18,10 +18,33 @@ export const KW = {
   RESTFUL: "RESTful API",
   RESPONSIVE: "Responsive",
   PHP: "PHP",
-  LARAVEL: "Laravel"
-}
+  LARAVEL: "Laravel",
+  JWT: "JWT"
+});
 
 export const portfolio = [
+  { 
+    type: TYPE.TECH,
+    title: "Magic: The Gathering Store",
+    description : [
+      "This is an independent project done as a mock-up Magic: The Gathering online store. It is a single-page application done on React, which employs routing and React-Bootstrap for the UI; as well as a RESTful API done on Express/Node.js connected to a MongoDB/Atlas database through Mongoose.",
+      "The app takes most of its data and image resources from the Scryfall API, as well as employing its own API for user registration/login, and for storing the data of sealed product and accessories.",
+      "The store allows to navigate through products, search cards by name, add products and cards to the shopping cart, register and login users, checkout, orders history, and add/edit products."
+    ],
+    keywords: [ KW.JAVASCRIPT, KW.REACT, KW.BOOTSTRAP, KW.RESPONSIVE, KW.NODEJS, KW.EXPRESS, KW.RESTFUL, KW.MONGODB, KW.JWT ],
+    images_url: ["mtg-store-1.png", "mtg-store-2.png"],
+    website_url: "https://mtg-store-app.vercel.app/",
+    repo_url: [
+      {
+        url: "https://github.com/ronyx-b/mtg-store-app",
+        name: "App"
+      },
+      {
+        url: "https://github.com/ronyx-b/mtg-store-api",
+        name: "API"
+      }
+    ]
+  },
   { 
     type: TYPE.TECH,
     title: "Meals Packages Store",
@@ -36,6 +59,18 @@ export const portfolio = [
   },
   {
     type: TYPE.TECH,
+    title: "Spotify API Access App",
+    description: [ 
+      "This was a project done for the WEB422 course on Seneca College. It is a single-page application done on Angular, which employs routing, Angular Material, Angular Flex-Layout, and authentication through JWT; as well as a RESTful API done on Express/Node.js connected to a MongoDB/Atlas database through Mongoose and the Spotify API.", 
+      "The app accesses the Spotify API and allows to navigate through the list of new releases, as well as search for artists, and listen to samples of songs when available. It lets you register a user in a MongoDB/Atlas database, and add songs to a \"Favourites\" list, which can latter be accessed."
+    ],
+    keywords: [ KW.JAVASCRIPT, KW.ANGULAR, KW.TYPESCRIPT, KW.RESTFUL, KW.MONGODB, KW.JWT ],
+    images_url: [ "spotify-api-1.png", "spotify-api-2.png" ],
+    website_url: "https://spotify-api-app.netlify.app/",
+    repo_url: "https://github.com/ronyx-b/web422-spotify-app"
+  },
+  {
+    type: TYPE.TECH,
     title: "New York Restaurants Catalog",
     description: [ 
       "This was a project done for the WEB422 course on Seneca College. It is a single-page application done on React, which employs routing, React-Bootstrap and React-Leaflet; as well as a RESTful API done on Express/Node.js connected to a MongoDB/Atlas database through Mongoose.", 
@@ -45,18 +80,6 @@ export const portfolio = [
     images_url: [ "ny-restaurants-1.png", "ny-restaurants-2.png" ],
     website_url: "https://peaceful-tundra-65893.herokuapp.com/",
     repo_url: "https://github.com/ronyx-b/restaurants-app"
-  },
-  {
-    type: TYPE.TECH,
-    title: "Spotify API Access App",
-    description: [ 
-      "This was a project done for the WEB422 course on Seneca College. It is a single-page application done on Angular, which employs routing, Angular Material, Angular Flex-Layout, and authentication through JWT; as well as a RESTful API done on Express/Node.js connected to a MongoDB/Atlas database through Mongoose and the Spotify API.", 
-      "The app accesses the Spotify API and allows to navigate through the list of new releases, as well as search for artists, and listen to samples of songs when available. It lets you register a user in a MongoDB/Atlas database, and add songs to a \"Favourites\" list, which can latter be accessed."
-    ],
-    keywords: [ KW.JAVASCRIPT, KW.ANGULAR, KW.TYPESCRIPT, KW.RESTFUL, KW.MONGODB ],
-    images_url: [ "spotify-api-1.png", "spotify-api-2.png" ],
-    website_url: "https://spotify-api-app.netlify.app/",
-    repo_url: "https://github.com/ronyx-b/web422-spotify-app"
   },
   {
     type: TYPE.MISC,
