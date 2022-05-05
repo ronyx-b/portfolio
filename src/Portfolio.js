@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { portfolio, TYPE } from "./projects"
-import { Container, Card, Row, Col, Carousel } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import { ProjectPlaceholder } from "./ProjectPlaceholder";
 import "./Project.css";
 import { Project } from "./Project";

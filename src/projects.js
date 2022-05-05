@@ -11,6 +11,7 @@ export const KW = Object.freeze({
   EXPRESS: "Express",
   BOOTSTRAP: "Bootstrap",
   REACT: "React",
+  REDUX: "Redux", 
   ANGULAR: "Angular",
   TYPESCRIPT: "Typescript",
   MONGODB: "MongoDB",
@@ -27,11 +28,12 @@ export const portfolio = [
     type: TYPE.TECH,
     title: "Magic: The Gathering Store",
     description : [
-      "This is an independent project done as a mock-up Magic: The Gathering online store. It is a single-page application done on React, which employs routing and React-Bootstrap for the UI; as well as a RESTful API done on Express/Node.js connected to a MongoDB/Atlas database through Mongoose.",
-      "The app takes most of its data and image resources from the Scryfall API, as well as employing its own API for user registration/login, and for storing the data of sealed product and accessories.",
-      "The store allows to navigate through products, search cards by name, add products and cards to the shopping cart, register and login users, checkout, orders history, and add/edit products."
+      "This is an independent project done as a mock-up Magic: The Gathering online store. It is a single-page application done on React with React-Redux, which employs routing and React-Bootstrap for the UI; as well as a RESTful API done on Express/Node.js connected to a MongoDB/Atlas database.",
+      "The app takes most of its data and image resources from the Scryfall API, as well as employing its own API for users and other products data.",
+      "The store allows to navigate through products, search cards by name, add products and cards to the shopping cart, register and login users, checkout, orders history, and add/edit products.",
+      "(work in progress)"
     ],
-    keywords: [ KW.JAVASCRIPT, KW.REACT, KW.BOOTSTRAP, KW.RESPONSIVE, KW.NODEJS, KW.EXPRESS, KW.RESTFUL, KW.MONGODB, KW.JWT ],
+    keywords: [ KW.JAVASCRIPT, KW.REACT, KW.REDUX, KW.BOOTSTRAP, KW.RESPONSIVE, KW.NODEJS, KW.EXPRESS, KW.RESTFUL, KW.MONGODB, KW.JWT ],
     images_url: ["mtg-store-1.png", "mtg-store-2.png"],
     website_url: "https://mtg-store-app.vercel.app/",
     repo_url: [
