@@ -16,13 +16,13 @@ export function Project({project}) {
                 )}
               </div>
               <div className="d-flex flex-row justify-content-evenly">
-                <a className="btn btn-primary m-2" href={project.website_url} target="_blank" rel="noreferrer">Go To The Website</a>
+                <a className="btn btn-primary m-2" href={project.website_url} target="_blank" rel="noreferrer">Website</a>
                 {typeof project.repo_url === "object" ? 
                 <>{project.repo_url.map((repo, i) => <>
-                  <a key={i} className="btn btn-primary m-2" href={repo.url} target="_blank" rel="noreferrer">Go To The {repo.name} Repository</a>
+                  <a key={i} className="btn btn-primary m-2" href={repo.url} target="_blank" rel="noreferrer">{repo.name} Repository</a>
                 </>)}</>
                 :
-                <><a className="btn btn-primary m-2" href={project.repo_url} target="_blank" rel="noreferrer">Go To The Repository</a></>
+                <><a className="btn btn-primary m-2" href={project.repo_url} target="_blank" rel="noreferrer">Repository</a></>
                 }
               </div>
             </Col>
