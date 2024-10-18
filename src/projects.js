@@ -11,6 +11,7 @@ export const KW = Object.freeze({
   EXPRESS: "Express",
   BOOTSTRAP: "Bootstrap",
   REACT: "React",
+  NEXT: "Next JS",
   REDUX: "Redux", 
   ANGULAR: "Angular",
   TYPESCRIPT: "Typescript",
@@ -33,16 +34,16 @@ export const portfolio = [
       "The store allows to navigate through products, search cards by name, add products and cards to the shopping cart, register and login users, checkout, orders history, and add/edit products.",
       "(work in progress)"
     ],
-    keywords: [ KW.JAVASCRIPT, KW.REACT, KW.REDUX, KW.BOOTSTRAP, KW.RESPONSIVE, KW.NODEJS, KW.EXPRESS, KW.RESTFUL, KW.MONGODB, KW.JWT ],
+    keywords: [ KW.JAVASCRIPT, KW.REACT, KW.REDUX, KW.NEXT, KW.BOOTSTRAP, KW.RESPONSIVE, KW.NODEJS, KW.EXPRESS, KW.RESTFUL, KW.MONGODB, KW.JWT ],
     images_url: ["mtg-store-1.png", "mtg-store-2.png"],
     website_url: "https://mtg-store.vercel.app/",
     repo_url: [
       {
-        name: "Frontend App Repository",
+        name: "Frontend App",
         url: "https://github.com/ronyx-b/mtg-store-app"
       },
       {
-        name: "Backend API Repository",
+        name: "Backend API",
         url: "https://github.com/ronyx-b/mtg-store-api"
       },
     ]
