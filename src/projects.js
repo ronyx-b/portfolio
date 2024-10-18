@@ -36,7 +36,16 @@ export const portfolio = [
     keywords: [ KW.JAVASCRIPT, KW.REACT, KW.REDUX, KW.BOOTSTRAP, KW.RESPONSIVE, KW.NODEJS, KW.EXPRESS, KW.RESTFUL, KW.MONGODB, KW.JWT ],
     images_url: ["mtg-store-1.png", "mtg-store-2.png"],
     website_url: "https://mtg-store.vercel.app/",
-    repo_url: "https://github.com/ronyx-b/mtg-store"
+    repo_url: [
+      {
+        name: "Frontend App Repository",
+        url: "https://github.com/ronyx-b/mtg-store-app"
+      },
+      {
+        name: "Backend API Repository",
+        url: "https://github.com/ronyx-b/mtg-store-api"
+      },
+    ]
   },
   { 
     type: TYPE.TECH,
